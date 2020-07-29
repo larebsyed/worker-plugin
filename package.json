@@ -5,6 +5,7 @@
   "main": "dist/worker-plugin.js",
   "repository": "GoogleChromeLabs/worker-plugin",
   "scripts": {
+    "prepare": "npm run build",
     "build": "microbundle --raw --inline none --format cjs --no-compress src/*.js",
     "prepack": "npm run build",
     "dev": "jest --verbose --watchAll",
